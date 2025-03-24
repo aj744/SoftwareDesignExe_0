@@ -25,10 +25,10 @@ public class Payroll {
             // Iterates the employees array to show each one's salary
             for(Employee e: employees){
                 if (e instanceof BasePlusCommissionEmployee){  // For the BasePlusCommissionEmployee employee
-                    System.out.println(e.earnings() * 1.1);
+                    System.out.printf("%.2f%n", e.earnings() * 1.1);
                 }
                 else {  // For any other employee
-                    System.out.println(e.earnings());
+                    System.out.printf("%.2f%n", e.earnings());
                 }
             }
         }
